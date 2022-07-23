@@ -1,2 +1,2 @@
 # Password-Generator
-Password Generator Using JS
+Password Generator Project using JS

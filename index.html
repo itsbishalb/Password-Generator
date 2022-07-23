@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts/script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="topSection">
+            <h1>Generate a <br><span>random password</span></h1>
+            <p>Never use an insecure password again.</p>
+            <div class="password-length">
+                <p>Use slider to choose password length</p>
+                <input title="password length" type="range" min="6" max="20" value="6" class="slider" id="password-length">
+                <p id="current-length"></p>
+            </div>
+            <button onclick="generatePassword()">Generate password</button>
+        </div>
+        <div class="line"></div>
+        <div id="password-container">
+            <div class="password">
+                <p id="password-1"></p>
+                <button type="button" class="fa copy-button" onclick="copyPassword(1)">&#xf0c5;</button>
+            </div>
+            <div class="password">
+                <p id="password-2"></p>
+                <button type="button" class="fa copy-button" onclick="copyPassword(2)">&#xf0c5;</button>
+            </div>
+        </div>
+        <p id="copy-msg">Password Copied Successfully</p>
+    </div>
+</body>
+</html>
